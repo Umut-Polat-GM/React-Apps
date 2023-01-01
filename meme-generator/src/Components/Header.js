@@ -9,7 +9,7 @@ export default function Header() {
                 alt="meme"
             />
             <h2 className="header--title">Meme Generator</h2>
-            <h3 className="header--project">React Course - Project 3</h3>
+            <h3 className="header--project">Umut Polat - React.js 3</h3>
         </header>
     )
 }
