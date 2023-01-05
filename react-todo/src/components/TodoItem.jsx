@@ -11,7 +11,10 @@ const TodoItem = ({todo:{text,id}, deleteTodo}) => {
 
     return (
       <div  className={state ? 'todo-item-done' : 'todo-item'}>
-          <p>{text}</p>
+          <div className='text-item'>
+            <p >{text}</p>
+          </div>
+          
           <div className='icon'>
             <i 
                 className="fa-sharp fa-solid fa-check"
