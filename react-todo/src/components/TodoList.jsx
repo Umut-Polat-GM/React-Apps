@@ -1,18 +1,25 @@
 import React from 'react'
+import TodoItem from './TodoItem'
 
-const TodoList = ({todos}) => {
+const TodoList = ({todos, deleteTodo}) => {
+  console.log(todos)
   return (
     <div className="todo-container">
         {
-            todos.map((todo, i) => (
-                <div
-                    key={i}
-                    className='todo-item'
-                >
-                    <p>{todo}</p>
-                    <i className="fas fa-times-circle"></i>
-                </div>
-            ))
+            // todos.map((todo) => (
+            //     <TodoItem 
+            //         key={todo.id} 
+            //         todo={todo.text} 
+            //         deleteTodo={deleteTodo} 
+            //     />
+            // ))
+            todos.map((todo)=>
+              <TodoItem
+                key={todo.id}
+                todo={todo}
+                deleteTodo={deleteTodo} 
+              />
+            )
         }
     </div>
   )
