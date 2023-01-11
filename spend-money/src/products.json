@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "title": "bread",
+        "price": 0.5
+    },
+    {
+        "id": 2,
+        "title": "cola",
+        "price": 1
+    },
+    {
+        "id": 3,
+        "title": "meat",
+        "price": 4
+    },
+    {
+        "id": 4,
+        "title": "apple",
+        "price": 1.5
+    },
+    {
+        "id": 5,
+        "title": "milk",
+        "price": 2
+    },
+    {
+        "id": 6,
+        "title": "pc",
+        "price": 150
+    },
+    {
+        "id": 6,
+        "title": "car",
+        "price": 1500
+    }
+]

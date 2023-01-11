@@ -1,9 +1,30 @@
-import React from 'react'
+import { useState } from "react"
 
-const Header = () => {
+
+const Header = ({money, total, changeMoney}) => {
+  const [numberValue, setNumberValue] = useState(0)
+  
+  function handleChange(e){
+    setNumberValue(e.target.value)
+  }
+  
+  
   return (
     <div>
-      Test Components
+      <div>Remaining money ${money - total}</div> 
+      {
+        money - total <= 0 ? <div>You're out of money</div> : ""
+      }
+      <div>
+        <input 
+          type="number"
+          min={0}
+          onChange={handleChange}
+          value={numberValue}
+        />
+        <button onClick={()=>changeMoney(numberValue)}>setMoney</button>
+        
+      </div>
     </div>
   )
 }
